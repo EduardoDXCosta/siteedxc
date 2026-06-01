@@ -19,11 +19,19 @@ services:
       labels:
         - "traefik.enable=true"
         - "traefik.docker.network=EDXCNET"
+        # router HTTPS (porta 443) — serve o site
         - "traefik.http.routers.siteedxc.rule=Host(`edxcautomacao.com.br`)"
         - "traefik.http.routers.siteedxc.entrypoints=websecure"
         - "traefik.http.routers.siteedxc.tls=true"
         - "traefik.http.routers.siteedxc.tls.certresolver=letsencryptresolver"
         - "traefik.http.services.siteedxc.loadbalancer.server.port=80"
+        # router HTTP (porta 80) — redireciona pra HTTPS
+        - "traefik.http.routers.siteedxc-http.rule=Host(`edxcautomacao.com.br`)"
+        - "traefik.http.routers.siteedxc-http.entrypoints=web"
+        - "traefik.http.routers.siteedxc-http.middlewares=siteedxc-https-redirect"
+        # middleware que faz o redirect 301 HTTP -> HTTPS
+        - "traefik.http.middlewares.siteedxc-https-redirect.redirectscheme.scheme=https"
+        - "traefik.http.middlewares.siteedxc-https-redirect.redirectscheme.permanent=true"
 
 networks:
   public:
