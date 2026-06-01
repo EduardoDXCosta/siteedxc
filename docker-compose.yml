@@ -1,0 +1,31 @@
+services:
+  web:
+    image: ghcr.io/eduardodxcosta/siteedxc:${IMAGE_TAG:-latest}
+    networks:
+      - public
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      restart_policy:
+        condition: any
+        delay: 5s
+      update_config:
+        order: start-first
+      resources:
+        limits:
+          memory: 64M
+      labels:
+        - "traefik.enable=true"
+        - "traefik.docker.network=EDXCNET"
+        - "traefik.http.routers.siteedxc.rule=Host(`edxcautomacao.com.br`)"
+        - "traefik.http.routers.siteedxc.entrypoints=websecure"
+        - "traefik.http.routers.siteedxc.tls=true"
+        - "traefik.http.routers.siteedxc.tls.certresolver=letsencryptresolver"
+        - "traefik.http.services.siteedxc.loadbalancer.server.port=80"
+
+networks:
+  public:
+    external: true
+    name: EDXCNET

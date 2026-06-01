@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDXC Automação — Automação de Processos, IA e Soluções Digitais</title>
+  <meta name="description" content="A EDXC Automação é especializada em automação de processos, inteligência artificial, integração de sistemas e soluções digitais para empresas. Economize tempo, aumente a produtividade e melhore o atendimento ao cliente.">
+  <meta name="keywords" content="automação de processos, inteligência artificial, integração de sistemas, bots whatsapp, soluções digitais, n8n, APIs">
+  <meta name="author" content="EDXC Automação">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="EDXC Automação — Automação de Processos e Soluções Digitais">
+  <meta property="og:description" content="Especialistas em automação, inteligência artificial e integração de sistemas para empresas que buscam eficiência e crescimento.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo-edxc.jpg">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo-edxc.jpg">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER / NAVIGATION
+       ============================================ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="EDXC Automação — Página inicial">
+        <img src="assets/logo-edxc.jpg" alt="Logo EDXC Automação" width="160" height="auto">
+      </a>
+
+      <nav class="nav-desktop" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#contato">Contato</a>
+        <a href="https://wa.me/5532998247459" class="nav-cta" target="_blank" rel="noopener">Fale Conosco</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="nav-mobile" id="nav-mobile" aria-label="Navegação mobile">
+    <button class="mobile-close" id="mobile-close" aria-label="Fechar menu">&times;</button>
+    <a href="#sobre" class="mobile-nav-link">Sobre</a>
+    <a href="#servicos" class="mobile-nav-link">Serviços</a>
+    <a href="#beneficios" class="mobile-nav-link">Benefícios</a>
+    <a href="#contato" class="mobile-nav-link">Contato</a>
+    <a href="https://wa.me/5532998247459" class="btn-primary" target="_blank" rel="noopener">Fale Conosco</a>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="assets/hero-bg.png" alt="" aria-hidden="true">
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Automação Inteligente para Empresas
+      </div>
+
+      <h1>
+        Transforme seus processos com <span class="gold">tecnologia e automação</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Ajudamos empresas a economizar tempo, reduzir erros e escalar operações 
+        através de automação de processos, inteligência artificial e integração 
+        de sistemas.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://wa.me/5532998247459" class="btn-primary" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Fale Conosco
+        </a>
+        <a href="#servicos" class="btn-secondary">
+          Conheça nossos serviços
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT SECTION
+       ============================================ -->
+  <section class="about" id="sobre">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Left: Visual Card -->
+        <div class="about-visual reveal">
+          <div class="about-card">
+            <span class="section-label">Sobre a Empresa</span>
+            <h2 class="section-title" style="margin-top: 0.5rem;">
+              Tecnologia a serviço da eficiência empresarial
+            </h2>
+            <div class="about-stat">
+              <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Foco em resultados</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Automação ativa</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">+</div>
+                <div class="stat-label">Produtividade</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Text Content -->
+        <div class="about-text reveal reveal-delay-2">
+          <p>
+            A EDXC Automação é uma empresa especializada em transformar a maneira 
+            como negócios operam. Combinamos automação de processos, inteligência 
+            artificial e integração de sistemas para criar soluções que geram 
+            impacto real no dia a dia das empresas.
+          </p>
+          <p>
+            Nosso trabalho visa resolver problemas concretos: tarefas repetitivas 
+            que consomem tempo, processos manuais sujeitos a erros, sistemas 
+            desconectados e atendimento que não escala. Desenvolvemos soluções 
+            sob medida, com foco em simplicidade, eficiência e retorno mensurável.
+          </p>
+          <p>
+            Acreditamos que a tecnologia deve ser acessível e funcional. Por isso, 
+            trabalhamos lado a lado com cada cliente para entender suas necessidades 
+            específicas e entregar soluções que realmente funcionam, sem complicações 
+            desnecessárias.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICES SECTION
+       ============================================ -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <div class="services-header reveal">
+        <span class="section-label">Nossos Serviços</span>
+        <h2 class="section-title">Soluções completas em automação e tecnologia</h2>
+        <p class="section-description">
+          Oferecemos um conjunto integrado de serviços para otimizar operações, 
+          conectar sistemas e potencializar resultados com inteligência artificial.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Automação de Processos -->
+        <div class="service-card reveal reveal-delay-1" id="svc-automacao">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+          </div>
+          <h3>Automação de Processos</h3>
+          <p>
+            Eliminamos tarefas repetitivas e manuais, automatizando fluxos de trabalho
+            de ponta a ponta. Desde o envio de notificações até a geração de relatórios,
+            cada processo é otimizado para funcionar sem intervenção humana.
+          </p>
+        </div>
+
+        <!-- Service 2: Integração de Sistemas -->
+        <div class="service-card reveal reveal-delay-2" id="svc-integracao">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/>
+              <polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/>
+              <line x1="4" y1="4" x2="9" y2="9"/>
+            </svg>
+          </div>
+          <h3>Integração de Sistemas</h3>
+          <p>
+            Conectamos ferramentas como ERPs, CRMs, plataformas de e-commerce e 
+            sistemas internos utilizando tecnologias como n8n e APIs REST. 
+            Seus dados fluem de forma contínua entre todas as plataformas.
+          </p>
+        </div>
+
+        <!-- Service 3: Bots para WhatsApp -->
+        <div class="service-card reveal reveal-delay-3" id="svc-bots">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              <line x1="9" y1="10" x2="9" y2="10"/><line x1="12" y1="10" x2="12" y2="10"/><line x1="15" y1="10" x2="15" y2="10"/>
+            </svg>
+          </div>
+          <h3>Bots para WhatsApp</h3>
+          <p>
+            Desenvolvemos chatbots inteligentes para WhatsApp que atendem seus 
+            clientes 24 horas por dia, 7 dias por semana. Respostas automáticas, 
+            qualificação de leads, agendamentos e suporte — tudo automatizado.
+          </p>
+        </div>
+
+        <!-- Service 4: Inteligência Artificial -->
+        <div class="service-card reveal reveal-delay-4" id="svc-ia">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"/>
+              <circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/>
+              <path d="M9 18h6"/>
+            </svg>
+          </div>
+          <h3>Soluções com Inteligência Artificial</h3>
+          <p>
+            Aplicamos inteligência artificial para análise de dados, geração de 
+            conteúdo, classificação de informações e tomada de decisão. 
+            Soluções práticas que agregam valor real ao seu negócio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       BENEFITS SECTION
+       ============================================ -->
+  <section class="benefits" id="beneficios">
+    <div class="container">
+      <div class="benefits-wrapper">
+        <div class="benefits-header reveal">
+          <span class="section-label">Benefícios</span>
+          <h2 class="section-title">Por que automatizar com a EDXC?</h2>
+        </div>
+
+        <div class="benefits-grid">
+          <!-- Benefit 1 -->
+          <div class="benefit-item reveal reveal-delay-1" id="bn-tempo">
+            <div class="benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h4>Economia de Tempo</h4>
+            <p>Reduza horas de trabalho manual com processos que rodam automaticamente e sem supervisão.</p>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="benefit-item reveal reveal-delay-2" id="bn-erros">
+            <div class="benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h4>Redução de Erros</h4>
+            <p>Elimine falhas humanas com fluxos padronizados e verificações automáticas em cada etapa.</p>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="benefit-item reveal reveal-delay-3" id="bn-escala">
+            <div class="benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/>
+              </svg>
+            </div>
+            <h4>Escalabilidade</h4>
+            <p>Cresça sem aumentar custos operacionais proporcionalmente. Suas automações acompanham a demanda.</p>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="benefit-item reveal reveal-delay-4" id="bn-atendimento">
+            <div class="benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h4>Atendimento Automatizado</h4>
+            <p>Atenda clientes a qualquer hora, com respostas precisas e personalizadas, sem depender de equipe disponível.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT SECTION
+       ============================================ -->
+  <section class="contact" id="contato">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left: Info -->
+        <div class="contact-info reveal">
+          <span class="section-label">Contato</span>
+          <h2 class="section-title">Vamos conversar sobre o seu projeto</h2>
+          <p class="section-description">
+            Entre em contato para uma conversa inicial sem compromisso. 
+            Queremos entender sua operação e mostrar como a automação 
+            pode trazer resultados concretos para o seu negócio.
+          </p>
+
+          <div class="contact-channels">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5532998247459" class="contact-channel" target="_blank" rel="noopener" id="contact-whatsapp">
+              <div class="channel-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                </svg>
+              </div>
+              <div class="channel-info">
+                <h4>WhatsApp</h4>
+                <p>+55 (32) 99824-7459</p>
+              </div>
+            </a>
+
+            <!-- Telefone -->
+            <a href="tel:+5532998247459" class="contact-channel" id="contact-phone">
+              <div class="channel-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="channel-info">
+                <h4>Telefone</h4>
+                <p>+55 (32) 99824-7459</p>
+              </div>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:contato@edxcautomacao.com.br" class="contact-channel" id="contact-email">
+              <div class="channel-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="channel-info">
+                <h4>E-mail</h4>
+                <p>contato@edxcautomacao.com.br</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-wrapper reveal reveal-delay-2">
+          <form class="contact-form" id="contact-form" action="#" method="POST" onsubmit="handleFormSubmit(event)">
+            <h3>Envie uma mensagem</h3>
+
+            <div class="form-group">
+              <label for="form-name">Nome completo</label>
+              <input type="text" id="form-name" name="name" placeholder="Seu nome" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email">E-mail</label>
+              <input type="email" id="form-email" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-phone">Telefone</label>
+              <input type="tel" id="form-phone" name="phone" placeholder="(00) 00000-0000">
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">Mensagem</label>
+              <textarea id="form-message" name="message" placeholder="Descreva brevemente o que você precisa..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary form-submit" id="form-submit-btn">
+              Enviar Mensagem
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="assets/logo-edxc.jpg" alt="EDXC Automação" width="140" height="auto">
+          </a>
+          <p>
+            Soluções em automação de processos, inteligência artificial e 
+            integração de sistemas para empresas que buscam eficiência e 
+            crescimento sustentável.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#beneficios">Benefícios</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Links -->
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+            <li><a href="termos-de-servico.html">Termos de Serviço</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 EDXC Automação. Todos os direitos reservados.</p>
+        <p>CNPJ: 36.653.456/0001-06</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       JAVASCRIPT
+       ============================================ -->
+  <script>
+    // ---- Header scroll effect ----
+    const header = document.getElementById('site-header');
+    let lastScrollY = 0;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+      lastScrollY = window.scrollY;
+    }, { passive: true });
+
+    // ---- Mobile menu ----
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navMobile = document.getElementById('nav-mobile');
+    const mobileClose = document.getElementById('mobile-close');
+
+    mobileToggle.addEventListener('click', () => {
+      navMobile.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    mobileClose.addEventListener('click', () => {
+      navMobile.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMobile.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // ---- Scroll reveal ----
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -60px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ---- Smooth scroll for anchor links ----
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const headerHeight = header.offsetHeight;
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+          window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ---- Form submission handler ----
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = document.getElementById('form-submit-btn');
+      const originalText = btn.innerHTML;
+
+      btn.innerHTML = 'Enviando...';
+      btn.disabled = true;
+
+      // Simulate submission (replace with actual endpoint)
+      setTimeout(() => {
+        btn.innerHTML = `
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Mensagem Enviada
+        `;
+        btn.style.background = '#2d8a4e';
+
+        setTimeout(() => {
+          form.reset();
+          btn.innerHTML = originalText;
+          btn.disabled = false;
+          btn.style.background = '';
+        }, 3000);
+      }, 1500);
+    }
+  </script>
+
+</body>
+</html>
