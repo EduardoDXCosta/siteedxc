@@ -19,19 +19,29 @@ services:
       labels:
         - "traefik.enable=true"
         - "traefik.docker.network=EDXCNET"
-        # router HTTPS (porta 443) — serve o site
+        # router HTTPS apex — SERVE o site
         - "traefik.http.routers.siteedxc.rule=Host(`edxcautomacao.com.br`)"
         - "traefik.http.routers.siteedxc.entrypoints=websecure"
         - "traefik.http.routers.siteedxc.tls=true"
         - "traefik.http.routers.siteedxc.tls.certresolver=letsencryptresolver"
         - "traefik.http.services.siteedxc.loadbalancer.server.port=80"
-        # router HTTP (porta 80) — redireciona pra HTTPS
-        - "traefik.http.routers.siteedxc-http.rule=Host(`edxcautomacao.com.br`)"
+        # router HTTP (apex E www) — redireciona pra HTTPS
+        - "traefik.http.routers.siteedxc-http.rule=Host(`edxcautomacao.com.br`) || Host(`www.edxcautomacao.com.br`)"
         - "traefik.http.routers.siteedxc-http.entrypoints=web"
         - "traefik.http.routers.siteedxc-http.middlewares=siteedxc-https-redirect"
-        # middleware que faz o redirect 301 HTTP -> HTTPS
+        # router HTTPS www — redireciona pra https://apex
+        - "traefik.http.routers.siteedxc-www.rule=Host(`www.edxcautomacao.com.br`)"
+        - "traefik.http.routers.siteedxc-www.entrypoints=websecure"
+        - "traefik.http.routers.siteedxc-www.tls=true"
+        - "traefik.http.routers.siteedxc-www.tls.certresolver=letsencryptresolver"
+        - "traefik.http.routers.siteedxc-www.middlewares=siteedxc-www-redirect"
+        # middleware: HTTP -> HTTPS (redirect 301 de scheme)
         - "traefik.http.middlewares.siteedxc-https-redirect.redirectscheme.scheme=https"
         - "traefik.http.middlewares.siteedxc-https-redirect.redirectscheme.permanent=true"
+        # middleware: www -> apex (redirect 301 via regex)
+        - "traefik.http.middlewares.siteedxc-www-redirect.redirectregex.regex=^https://www\\.edxcautomacao\\.com\\.br/(.*)"
+        - "traefik.http.middlewares.siteedxc-www-redirect.redirectregex.replacement=https://edxcautomacao.com.br/$${1}"
+        - "traefik.http.middlewares.siteedxc-www-redirect.redirectregex.permanent=true"
 
 networks:
   public:
