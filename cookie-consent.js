@@ -52,6 +52,7 @@
     banner.setAttribute('role', 'dialog');
     banner.setAttribute('aria-live', 'polite');
     banner.setAttribute('aria-label', 'Aviso de cookies');
+    document.body.classList.add('cookie-banner-open');
     banner.innerHTML = `
       <div class="cookie-banner-inner">
         <div class="cookie-banner-text">
@@ -195,6 +196,7 @@
   function hideBanner() {
     const banner = document.getElementById('cookie-banner');
     if (banner) banner.remove();
+    document.body.classList.remove('cookie-banner-open');
   }
 
   function openPreferences() {
